@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Even Odd Checker</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 100px;
+            font-family: Arial;
+        }
+        input, button {
+            padding: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Even or Odd Checker</h1>
+
+    <input type="number" id="num" placeholder="Enter number">
+    <button onclick="check()">Check</button>
+
+    <h2 id="result"></h2>
+
+    <script>
+        function check() {
+            let n = document.getElementById("num").value;
+
+            if (n % 2 == 0) {
+                document.getElementById("result").innerHTML = n + " is Even";
+            } else {
+                document.getElementById("result").innerHTML = n + " is Odd";
+            }
+        }
+    </script>
+
+</body>
+</html>
